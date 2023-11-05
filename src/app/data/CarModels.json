@@ -1,0 +1,68 @@
+[
+    {
+        "key": 1,
+        "make": "Ford",
+        "model": "Focus",
+        "pplCapacity": 5,
+        "fuel": "Petrol",
+        "transmission": "Manual",
+        "imgname": "1.png",
+        "description": "A versatile and fuel-efficient car. This model is ideal for those seeking an affordable and practical option for their travels.",
+        "premium": false
+    },
+    {
+        "key": 4,
+        "make": "BMW",
+        "model": "5 Series",
+        "pplCapacity": 5,
+        "fuel": "Petrol",
+        "transmission": "Manual",
+        "imgname": "4.png",
+        "description": "A luxurious and stylish choice for those who are seeking a premium driving experience.",
+        "premium": true
+    },
+    {
+        "key": 6,
+        "make": "Toyota",
+        "model": "Yaris",
+        "pplCapacity": 5,
+        "fuel": "Petrol",
+        "transmission": "Automatic",
+        "imgname": "6.png",
+        "description": "A reliable and compact car for easy and convenient driving. An excellent choice for those who value simplicity and efficiency.",
+        "premium": false
+    },
+    {
+        "key": 2,
+        "make": "Vauxhall",
+        "model": "Corsa",
+        "pplCapacity": 5,
+        "fuel": "Petrol",
+        "transmission": "Manual",
+        "imgname": "2.png",
+        "description": "A practical and economical option for urban driving. It's a great choice for those looking for affordability and city-friendly features.",
+        "premium": false
+    },
+    {
+        "key": 7,
+        "make": "Skoda",
+        "model": "Octavia",
+        "pplCapacity": 5,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "imgname": "7.png",
+        "description": "A dependable and fuel-efficient car that offers an excellent cost-effective and reliable option for your travels.",
+        "premium": false
+    },
+    {
+        "key": 10,
+        "make": "Mercedes-Benz",
+        "model": "C-Class",
+        "pplCapacity": 4,
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "imgname": "10.png",
+        "description": "A premium luxury car which is ideally suited for those who desire a high-end, sophisticated driving experience.",
+        "premium": true
+    }
+]

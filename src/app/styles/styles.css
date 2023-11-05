@@ -1,0 +1,16 @@
+.hero-img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.car-img {
+    height: 13rem;
+    transition: transform 0.5s;
+    margin: auto;
+    display: block;
+}
+
+.car-card:hover .car-img {
+    transform: scale(1.05);
+}
