@@ -19,13 +19,13 @@ export default function QuoteForm() {
     };
 
     return (
-        <div className="card my-5 py-2">
+        <div className="card my-5 py-2 mx-5">
             <div className="card-body">
 
                 <div>
                     {price == null ?
                         <div className="row">
-                            <div className="col-12">
+                            <div className="col-12 text-center mb-3">
                                 <h2>Find your next rental</h2>
                             </div>
 
@@ -106,7 +106,7 @@ export default function QuoteForm() {
                         <div className="row">
                             <div className="col-12">
                                 <h2>
-                                    <i class="bi bi-check2-circle"></i> Your {duration} day trip from {startLocation} to {endLocation}
+                                    <i class="bi bi-check2-circle"></i> Your {duration} day trip from {startLocation} {startLocation != endLocation && "to " + endLocation}
                                 </h2>
                                 <p>Estimated cost is only £{price}</p>
 

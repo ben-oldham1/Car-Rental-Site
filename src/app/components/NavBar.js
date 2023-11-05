@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-white">
             <div className="container-fluid">
                 <Link href="/home" className="navbar-brand">
                     Car rent name
