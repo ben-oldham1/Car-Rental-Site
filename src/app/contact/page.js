@@ -18,7 +18,7 @@ export default function Page() {
 
   return (
     <div className='container'>
-      <div className='row'>
+      <div className='row my-3'>
 
         <div className='col-4'>
           <div className='card h-100'>

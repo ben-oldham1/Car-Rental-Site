@@ -1,10 +1,8 @@
 import Link from 'next/link';
 import QuoteForm from '../components/QuoteForm';
+import Hero from '../components/Hero';
 
-export default function Page() {
-  return (
-    <div>
-
+/*
       <div>
         <img src="hero-img.jpg" className="hero-img" alt="Winding road" />
       </div>
@@ -14,6 +12,13 @@ export default function Page() {
         < QuoteForm />
 
       </div>
+*/
+
+export default function Page() {
+  return (
+    <div>
+
+      <Hero />
 
       <h1>
         Home page! Go to <Link href="/contact">about</Link>
