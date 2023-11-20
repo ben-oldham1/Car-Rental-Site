@@ -42,15 +42,21 @@ export default function Page() {
               </select>
 
               {selectedBranch && (
-                <div>
+                <div className='mt-3'>
                   <p>
-                    <i className="bi bi-telephone"></i> {selectedBranch.phone}
+                    <i className="bi bi-telephone"></i> <strong>{selectedBranch.phone}</strong>
                   </p>
                   <p>
-                    <i className="bi bi-envelope"></i> {selectedBranch.email}
+                    <i className="bi bi-envelope"></i> <strong>{selectedBranch.email}</strong>
                   </p>
                 </div>
               )}
+
+              <Link href="/branches">
+                <button className='btn btn-primary'>
+                  See all branch info
+                </button>
+              </Link>
 
             </div>
           </div>
