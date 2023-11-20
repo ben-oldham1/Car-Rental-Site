@@ -32,19 +32,19 @@ function CarCard(props) {
                 </div>
                 <div className='row'>
                     <div className='col-md-4'>
-                        <h5>
+                        <p>
                             <i class="bi bi-people"></i> {pplCapacity}
-                        </h5>
+                        </p>
                     </div>
                     <div className='col-md-4'>
-                        <h5>
+                        <p>
                             <i class="bi bi-fuel-pump"></i> {fuel}
-                        </h5>
+                        </p>
                     </div>
                     <div className='col-md-4'>
-                        <h5>
+                        <p>
                             {premium && <span class="badge rounded-pill  bg-secondary">Premium</span>}
-                        </h5>
+                        </p>
                     </div>
                 </div>
                 <div className='row'>
