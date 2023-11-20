@@ -13,6 +13,13 @@ $border-radius-lg:            .3rem !default;
 $border-radius-xl:            0.5rem !default;
 $border-radius-xxl:           1rem !default;
 
+// Body background colour
+$body-bg: #f6f6f6;
+
+// Component background colours
+$card-bg: #ffffff;
+$input-bg: #ffffff;
+
 // Import Your Custom Fonts
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400&display=swap');
 

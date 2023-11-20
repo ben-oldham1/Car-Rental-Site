@@ -19,7 +19,7 @@ export default function QuoteForm() {
     };
 
     return (
-        <div className="card my-5 py-2 mx-5">
+        <div className="card hero-card my-5 py-2 mx-5">
             <div className="card-body">
 
                 <div>
