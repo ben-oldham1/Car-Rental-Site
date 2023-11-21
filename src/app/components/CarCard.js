@@ -5,6 +5,7 @@ function CarCard(props) {
 
     const imgname = props.car.imgname;
 
+    const key = props.car.key;
     const make = props.car.make;
     const model = props.car.model;
     const premium = props.car.premium;
@@ -50,6 +51,22 @@ function CarCard(props) {
                 <div className='row'>
                     <div className='col-12'>
                         {description && description}
+                    </div>
+                </div>
+                <div className='row mt-3'>
+                    <div className='col-12'>
+                        <Link
+                            href={{
+                                pathname: '/reserve',
+                                query: {
+                                    car: key,
+                                },
+                            }}
+                        >
+                            <button className='btn btn-outline-primary'>
+                                Reserve me
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
