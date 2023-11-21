@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 import branchData from '../data/Branches.json';
+import FaqAccordion from '../components/FaqAccordion';
 
 export default function Page() {
   const [branch, setBranch] = useState("London"); // Default branch is London
@@ -20,7 +21,7 @@ export default function Page() {
     <div className='container'>
       <div className='row my-3'>
 
-        <div className='col-4'>
+        <div className='col-md-6'>
           <div className='card h-100'>
             <div className='card-body'>
               <h2>Contact a branch</h2>
@@ -62,7 +63,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className='col-4'>
+        <div className='col-md-6'>
           <div className='card h-100'>
             <div className='card-body'>
               <h2>Customer service</h2>
@@ -70,15 +71,35 @@ export default function Page() {
           </div>
         </div>
 
-        <div className='col-4'>
-          <div className='card h-100'>
-            <div className='card-body'>
-              <h2>Frequently Asked Questions (FAQ)</h2>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <div className='row my-3'>
+        <div className='col-12'>
+          <h2>Frequently Asked Questions (FAQ)</h2>
+        </div>
+      </div>
+
+      <div className='row my-3'>
+        <div className='col-12'>
+          <FaqAccordion />
+        </div>
+      </div>
+
+      <div className='row my-3'>
+        <div className='col-12'>
+          <h2>Leave us a review</h2>
+        </div>
+      </div>
+
+      <div className='row my-3'>
+        <div className='col-md-4'>
+          <p>TrustPilot</p>
+        </div>
+        <div className='col-md-4'>
+          <p>Trustpilot</p>
+        </div>
+      </div>
+
     </div>
   );
 }
