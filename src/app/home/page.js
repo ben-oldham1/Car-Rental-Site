@@ -1,19 +1,4 @@
-import Link from 'next/link';
-import QuoteForm from '../components/QuoteForm';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-
-/*
-      <div>
-        <img src="hero-img.jpg" className="hero-img" alt="Winding road" />
-      </div>
-
-      <div className='container'>
-
-        < QuoteForm />
-
-      </div>
-*/
 
 export default function Page() {
   return (
@@ -94,7 +79,6 @@ export default function Page() {
 
       </section>
 
-      <Footer />
     </div>
   )
 }
