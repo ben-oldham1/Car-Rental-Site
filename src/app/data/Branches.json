@@ -14,13 +14,6 @@
         "email": "bristol@carrentalcompany.com"
     },
     {
-        "key": 3,
-        "name": "Exeter",
-        "imgName": "exeter.jpg",
-        "phone": "345-678-9012",
-        "email": "exeter@carrentalcompany.com"
-    },
-    {
         "key": 4,
         "name": "Manchester",
         "imgName": "manchester.jpg",
@@ -47,12 +40,5 @@
         "imgName": "newcastle.jpg",
         "phone": "789-012-3456",
         "email": "newcastle@carrentalcompany.com"
-    },
-    {
-        "key": 8,
-        "name": "Bournemouth",
-        "imgName": "bournemouth.jpg",
-        "phone": "890-123-4567",
-        "email": "bournemouth@carrentalcompany.com"
     }
 ]
