@@ -11,6 +11,11 @@
     display: block;
 }
 
+.branch-img {
+    height: 15rem;
+    object-fit: cover;
+}
+
 .car-card:hover .car-img {
     transform: scale(1.05);
 }
@@ -43,4 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
 }
