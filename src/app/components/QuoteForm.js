@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import branchData from '../data/Branches.json';
 
 export default function QuoteForm() {
     const [startLocation, setStartLocation] = useState('London');
@@ -38,14 +39,11 @@ export default function QuoteForm() {
                                     value={startLocation}
                                     onChange={(e) => setStartLocation(e.target.value)}
                                 >
-                                    <option value="London" key="1">London</option>
-                                    <option value="Bristol" key="2">Bristol</option>
-                                    <option value="Exeter" key="3">Exeter</option>
-                                    <option value="Manchester" key="4">Manchester</option>
-                                    <option value="Birmingham" key="5">Birmingham</option>
-                                    <option value="Leeds" key="6">Leeds</option>
-                                    <option value="Newcastle" key="7">Newcastle</option>
-                                    <option value="Bournemouth" key="8">Bournemouth</option>
+                                    {branchData.map((branch) => (
+                                        <option key={branch.key} value={branch.name}>
+                                            {branch.name}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
 
@@ -70,14 +68,11 @@ export default function QuoteForm() {
                                     value={endLocation}
                                     onChange={(e) => setEndLocation(e.target.value)}
                                 >
-                                    <option value="London" key="1">London</option>
-                                    <option value="Bristol" key="2">Bristol</option>
-                                    <option value="Exeter" key="3">Exeter</option>
-                                    <option value="Manchester" key="4">Manchester</option>
-                                    <option value="Birmingham" key="5">Birmingham</option>
-                                    <option value="Leeds" key="6">Leeds</option>
-                                    <option value="Newcastle" key="7">Newcastle</option>
-                                    <option value="Bournemouth" key="8">Bournemouth</option>
+                                    {branchData.map((branch) => (
+                                        <option key={branch.key} value={branch.name}>
+                                            {branch.name}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
 
