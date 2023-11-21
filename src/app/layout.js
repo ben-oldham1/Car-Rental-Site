@@ -4,6 +4,7 @@ import "./styles/styles.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   )
