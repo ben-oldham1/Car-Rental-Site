@@ -24,10 +24,10 @@ function BranchCard(props) {
 
                 <div className='row mt-2'>
                     <div className='col-md-7'>
-                        <i className="bi bi-envelope"></i> <strong>{email}</strong>
+                        <i className="bi bi-envelope"></i> <Link href={'mailto:' + email} className='link'> {email}</Link>
                     </div>
                     <div className='col-md-5'>
-                        <i className="bi bi-telephone"></i> <strong>{phone}</strong>
+                        <i className="bi bi-telephone"></i> <Link href={'tel:' + phone} className='link'> {phone}</Link>
                     </div>
                 </div>
 

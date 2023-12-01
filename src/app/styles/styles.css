@@ -4,11 +4,24 @@
     object-fit: cover;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
 .car-img {
     height: 13rem;
     transition: transform 0.5s;
     margin: auto;
     display: block;
+}
+
+.max-width-container {
+    max-width: 75rem;
 }
 
 .branch-img {

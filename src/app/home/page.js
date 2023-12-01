@@ -6,7 +6,7 @@ export default function Page() {
 
       <Hero />
 
-      <section className='container-fluid py-5'>
+      <section className='container-fluid max-width-container py-5'>
         <div className='row'>
           <div className='col-12 text-center'>
             <h1>Why do customers love us?</h1>
@@ -43,10 +43,11 @@ export default function Page() {
       </section>
 
 
-      <section className='container-fluid py-5'>
+
+      <section className='container-fluid max-width-container py-5'>
         <div className='row'>
           <div className='col-12 text-center'>
-            <h1>Meet our fleet</h1>
+            <h1>Branches across the UK</h1>
             <p>More filler text</p>
           </div>
         </div>

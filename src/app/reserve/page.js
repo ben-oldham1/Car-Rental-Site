@@ -24,10 +24,10 @@ const Reservations = () => {
   };
 
   return (
-    <div className='container'>
-      <div className='row mt-3'>
+    <div className='container max-width-container'>
+      <div className='row mt-4'>
         <div className='col-12'>
-          <h1>Make a reservation</h1>
+          <h1 className='text-center'>Make a reservation</h1>
           <p>
             Ready to embark on your next adventure? Making a reservation with us is a simple, hassle-free process. Select from our array of vehicles, choose your desired pick-up and drop-off locations, and your rental period.
           </p>
@@ -37,13 +37,13 @@ const Reservations = () => {
         </div>
       </div>
 
-      <div className='row mt-3'>
-        <div className='col-12'>
-          <h3>The reservation process</h3>
+      <div className='row mt-5'>
+        <div className='col-12 text-center'>
+          <h2>The reservation process</h2>
         </div>
       </div>
 
-      <div className='row text-center mt-3'>
+      <div className='row text-center'>
         <div className='col-md-4'>
           <img src="/icons/contact-form.png" className='img-fluid w-25 my-4' />
           <h4>Submit a reservation online</h4>
@@ -61,13 +61,7 @@ const Reservations = () => {
         </div>
       </div>
 
-      <div className='row mt-3'>
-        <div className='col-12'>
-          <h3>Reserve online</h3>
-        </div>
-      </div>
-
-      <div className='row my-3'>
+      <div className='row mb-5 mt-5'>
         <div className='col-12'>
           <ReservationForm initialValues={initialValues} />
         </div>

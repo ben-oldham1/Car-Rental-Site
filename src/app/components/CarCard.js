@@ -53,7 +53,11 @@ function CarCard(props) {
                         {description && description}
                     </div>
                 </div>
-                <div className='row mt-3'>
+
+            </div>
+
+            <div class="card-footer bg-white border-0">
+                <div className='row pb-2'>
                     <div className='col-12'>
                         <Link
                             href={{
@@ -63,13 +67,12 @@ function CarCard(props) {
                                 },
                             }}
                         >
-                            <button className='btn btn-outline-primary'>
+                            <button className='btn btn-outline-primary w-100'>
                                 Reserve me
                             </button>
                         </Link>
                     </div>
                 </div>
-
             </div>
 
         </section>

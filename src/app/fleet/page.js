@@ -6,8 +6,10 @@ import carData from '../data/CarModels.json';
 
 export default function Page() {
     return (
-        <div className='container'>
-            <h1>Our fleet</h1>
+        <div className='container max-width-container'>
+            <div className='mt-4 mb-3'>
+                <h1 className='text-center'>Our fleet</h1>
+            </div>
 
             <div className='row'>
                 {carData.map((car) => (

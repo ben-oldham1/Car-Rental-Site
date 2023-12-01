@@ -18,13 +18,13 @@ export default function Page() {
   const selectedBranch = getBranchDetails(branch);
 
   return (
-    <div className='container'>
-      <div className='row my-3'>
+    <div className='container max-width-container'>
+      <div className='row mt-4 mb-3'>
 
         <div className='col-md-6'>
           <div className='card h-100'>
             <div className='card-body'>
-              <h2>Contact a branch</h2>
+              <h2 className='text-center'>Contact a branch</h2>
 
               <p>Contacting your local branch is the best way to find more information. Use the dropdown to get contact details for any of our branches.</p>
 
@@ -45,10 +45,10 @@ export default function Page() {
               {selectedBranch && (
                 <div className='mt-3'>
                   <p>
-                    <i className="bi bi-telephone"></i> <strong>{selectedBranch.phone}</strong>
+                    <i className="bi bi-telephone"></i> <Link href={'tel:' + selectedBranch.phone} className='link'>{selectedBranch.phone}</Link>
                   </p>
                   <p>
-                    <i className="bi bi-envelope"></i> <strong>{selectedBranch.email}</strong>
+                    <i className="bi bi-envelope"></i> <Link href={'mailto:' + selectedBranch.email} className='link'> {selectedBranch.email}</Link>
                   </p>
                 </div>
               )}
@@ -66,7 +66,7 @@ export default function Page() {
         <div className='col-md-6'>
           <div className='card h-100'>
             <div className='card-body'>
-              <h2>Customer service</h2>
+              <h2 className='text-center'>Customer service</h2>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Page() {
 
       <div className='row my-3'>
         <div className='col-12'>
-          <h2>Frequently Asked Questions (FAQ)</h2>
+          <h2 className='text-center'>Frequently Asked Questions (FAQ)</h2>
         </div>
       </div>
 
@@ -87,7 +87,7 @@ export default function Page() {
 
       <div className='row my-3'>
         <div className='col-12'>
-          <h2>Leave us a review</h2>
+          <h2 className='text-center'>Leave us a review</h2>
         </div>
       </div>
 

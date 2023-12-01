@@ -19,6 +19,8 @@ const ReservationForm = ({ initialValues }) => {
         <section className='card'>
             <div className='card-body'>
 
+                <h2 className='text-center mb-4'>Reserve online</h2>
+
                 <form onSubmit={handleSubmit}>
                     <div className='row'>
                         <div className="col-md-6 mb-3">
