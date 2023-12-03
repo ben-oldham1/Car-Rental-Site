@@ -1,19 +1,27 @@
-import React from 'react';
-import { Collapse } from 'bootstrap';
-import faqData from '../data/Faq.json'
+import React, { useState } from 'react';
+import faqData from '../data/Faq.json';
 
 const FaqAccordion = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        if (activeIndex === index) {
+            setActiveIndex(null);
+        } else {
+            setActiveIndex(index);
+        }
+    };
+
     return (
         <div className="accordion" id="FAQ">
             {faqData.faqs.map((faq, index) => (
-                <div className="accordion-item" key={index}>
+                <div className="accordion-item mb-2">
                     <h2 className="accordion-header">
                         <button
-                            className="accordion-button collapsed"
+                            className={`accordion-button ${activeIndex === index ? '' : 'collapsed'}`}
                             type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target={`#collapse${index}`}
-                            aria-expanded="true"
+                            onClick={() => toggleAccordion(index)}
+                            aria-expanded={activeIndex === index ? 'true' : 'false'}
                             aria-controls={`collapse${index}`}
                         >
                             {faq.question}
@@ -21,8 +29,8 @@ const FaqAccordion = () => {
                     </h2>
                     <div
                         id={`collapse${index}`}
-                        className="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
+                        className={`accordion-collapse collapse ${activeIndex === index ? 'show' : ''}`}
+                        aria-labelledby={`heading${index}`}
                     >
                         <div className="accordion-body">
                             {faq.answer}
