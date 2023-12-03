@@ -4,11 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function Navigation() {
     const pathname = usePathname()
 
     return (
-        <nav className="navbar navbar-expand-lg py-0 bg-white">
+        <nav className="navbar sticky-top navbar-expand-lg py-2 bg-white">
             <div className="container-fluid">
                 <Link href="/home" className="navbar-brand">
                     Car rent name
@@ -25,28 +27,28 @@ function Navigation() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link href="/home" className={`nav-link p-3 ${pathname === '/home' ? 'active' : ''}`}>
+                    <ul className="navbar-nav w-100">
+                        <li className="nav-item p-1">
+                            <Link href="/home" className={`nav-link ${pathname === '/home' ? 'active' : ''}`}>
                                 Instant quote
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link href="/fleet" className={`nav-link p-3 ${pathname === '/fleet' ? 'active' : ''}`}>
+                        <li className="nav-item p-1">
+                            <Link href="/fleet" className={`nav-link ${pathname === '/fleet' ? 'active' : ''}`}>
                                 Our fleet
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link href="/branches" className={`nav-link p-3 ${pathname === '/branches' ? 'active' : ''}`}>
+                        <li className="nav-item p-1">
+                            <Link href="/branches" className={`nav-link ${pathname === '/branches' ? 'active' : ''}`}>
                                 Branches
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link href="/contact" className={`nav-link p-3 ${pathname === '/contact' ? 'active' : ''}`}>
+                        <li className="nav-item p-1">
+                            <Link href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>
                                 Contact
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item reserve-button p-1">
                             <Link href="/reserve">
                                 <button className='btn btn-primary'>
                                     Reserve
