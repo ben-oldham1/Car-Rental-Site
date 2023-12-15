@@ -54,8 +54,8 @@ export default function Page() {
 
         <div className='row'>
           {ReviewData.map((review) => (
-            <div className='col-sm-6 col-lg-3 mb-3'>
-              <ReviewCard key={review.key} review={review} />
+            <div className='col-sm-6 col-lg-3 mb-3' key={review.key}>
+              <ReviewCard review={review} />
             </div>
           ))}
         </div>
