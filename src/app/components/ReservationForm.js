@@ -33,8 +33,9 @@ const ReservationForm = ({ initialValues }) => {
                                 onChange={handleChange}
                             >
                                 <option value='' disabled={true}>
-
+                                    Select a branch
                                 </option>
+
                                 {branchData.map((branch) => (
                                     <option key={branch.key} value={branch.name} selected={branch.name == formData.start ? true : false}>
                                         {branch.name}
@@ -52,8 +53,9 @@ const ReservationForm = ({ initialValues }) => {
                                 onChange={handleChange}
                             >
                                 <option value='' disabled={true}>
-
+                                    Select a branch
                                 </option>
+
                                 {branchData.map((branch) => (
                                     <option key={branch.key} value={branch.name} selected={branch.name == formData.end ? true : false}>
                                         {branch.name}
