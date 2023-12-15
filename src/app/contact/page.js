@@ -54,7 +54,7 @@ export default function Page() {
               )}
 
               <Link href="/branches">
-                <button className='btn btn-primary'>
+                <button className='btn btn-outline-primary'>
                   See all branch info
                 </button>
               </Link>
