@@ -7,6 +7,12 @@ $warning: #ffc107;
 $danger: #dc3545;
 $white: #ffffff;
 
+$primary-bg-subtle: #003F91;
+$primary-text-emphasis: #ffffff;
+
+// Link colour
+$bs-link-color-rgb: 33, 37, 41;
+
 // Border radius
 $border-radius:               .15rem !default;
 $border-radius-sm:            .1rem !default;
@@ -20,6 +26,11 @@ $body-bg: #f6f6f6;
 // Component background colours
 $card-bg: #ffffff;
 $input-bg: #ffffff;
+
+$accordion-bg: #ffffff;
+$accordion-btn-focus-box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.25);
+
+$navbar-toggler-focus-width: 0;
 
 
 // Import Your Custom Fonts

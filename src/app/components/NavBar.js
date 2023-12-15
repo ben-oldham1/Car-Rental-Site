@@ -10,10 +10,10 @@ function Navigation() {
     const pathname = usePathname()
 
     return (
-        <nav className="navbar sticky-top navbar-expand-lg py-2 bg-white">
+        <nav className="navbar sticky-top navbar-expand-lg py-1 bg-white">
             <div className="container-fluid">
                 <Link href="/home" className="navbar-brand">
-                    Car rent name
+                    <img src="Logo.png" alt="Logo" height="38" class="d-inline-block align-text-top"></img>
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -51,7 +51,7 @@ function Navigation() {
                         <li className="nav-item reserve-button p-1">
                             <Link href="/reserve">
                                 <button className='btn btn-primary'>
-                                    Reserve
+                                    Make reservation
                                 </button>
                             </Link>
                         </li>
