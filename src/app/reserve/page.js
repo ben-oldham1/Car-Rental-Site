@@ -25,21 +25,10 @@ const Reservations = () => {
 
   return (
     <div className='container max-width-container'>
+
       <div className='row mt-4'>
         <div className='col-12'>
           <h1 className='text-center'>Make a reservation</h1>
-          <p>
-            Ready to embark on your next adventure? Making a reservation with us is a simple, hassle-free process. Select from our array of vehicles, choose your desired pick-up and drop-off locations, and your rental period.
-          </p>
-          <p>
-            Although securing the perfect vehicle for your journey is just a few clicks away with our online form, you're welcome to <Link href={'/contact'}>contact a branch</Link> if you need help making a reservation, or have specific requirements.
-          </p>
-        </div>
-      </div>
-
-      <div className='row mt-5'>
-        <div className='col-12 text-center'>
-          <h2>The reservation process</h2>
         </div>
       </div>
 
@@ -58,6 +47,17 @@ const Reservations = () => {
           <img src="/icons/complete.png" className='img-fluid w-25 my-4' />
           <h4>Your car is reserved!</h4>
           <p>Once the deposit is paid, your car will be reserved, ready for collection on your pick-up date.</p>
+        </div>
+      </div>
+
+      <div className='row mt-4'>
+        <div className='col-12'>
+          <p>
+            Ready to embark on your next adventure? Making a reservation with us is a simple, hassle-free process. Select from our array of vehicles, choose your desired pick-up and drop-off locations, and your rental period.
+          </p>
+          <p>
+            Although securing the perfect vehicle for your journey is just a few clicks away with our online form, you're welcome to <Link href={'/contact'}>contact a branch</Link> if you need help making a reservation, or have specific requirements.
+          </p>
         </div>
       </div>
 
