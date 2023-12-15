@@ -13,8 +13,8 @@ export default function Page() {
 
             <div className='row'>
                 {carData.map((car) => (
-                    <div className='col-md-6 col-lg-4 mb-3'>
-                        <CarCard key={car.key} car={car} />
+                    <div className='col-md-6 col-lg-4 mb-3' key={car.key}>
+                        <CarCard car={car} />
                     </div>
                 ))}
             </div>

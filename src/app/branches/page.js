@@ -13,8 +13,8 @@ export default function Page() {
 
             <div className='row'>
                 {branchData.map((branch) => (
-                    <div className='col-md-6 mb-3'>
-                        <BranchCard key={branch.key} branch={branch} />
+                    <div className='col-md-6 mb-3' key={branch.key} >
+                        <BranchCard branch={branch} />
                     </div>
                 ))}
             </div>

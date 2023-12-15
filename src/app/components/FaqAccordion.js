@@ -15,7 +15,7 @@ const FaqAccordion = () => {
     return (
         <div className="accordion" id="FAQ">
             {faqData.faqs.map((faq, index) => (
-                <div className="accordion-item mb-2">
+                <div className="accordion-item mb-2" key={index}>
                     <h2 className="accordion-header">
                         <button
                             className={`accordion-button ${activeIndex === index ? '' : 'collapsed'}`}
