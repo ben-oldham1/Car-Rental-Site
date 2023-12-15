@@ -1,4 +1,6 @@
 import Hero from '../components/Hero';
+import ReviewCard from '../components/ReviewCard';
+import ReviewData from '../data/ReviewData.json';
 
 export default function Page() {
   return (
@@ -39,12 +41,25 @@ export default function Page() {
             </button>
           </div>
         </div>
-
       </section>
 
 
 
       <section className='container-fluid max-width-container py-5'>
+        <div className='row'>
+          <div className='col-12 text-center'>
+            <h1>See our latest reviews</h1>
+          </div>
+        </div>
+
+        <div className='row'>
+          {ReviewData.map((review) => (
+            <div className='col-sm-6 col-lg-3 mb-3'>
+              <ReviewCard key={review.key} review={review} />
+            </div>
+          ))}
+        </div>
+
         <div className='row'>
           <div className='col-12 text-center'>
             <h1>Branches across the UK</h1>
@@ -77,7 +92,6 @@ export default function Page() {
             </button>
           </div>
         </div>
-
       </section>
 
     </div>
