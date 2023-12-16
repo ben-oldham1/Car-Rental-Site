@@ -113,7 +113,7 @@ export default function QuoteForm() {
                         <div className="row text-center">
                             <div className="col-12">
                                 <h2>
-                                    <i class="bi bi-check2-circle"></i> Your {duration} day trip from {startLocation} {startLocation != endLocation && "to " + endLocation}
+                                    <i className="bi bi-check2-circle"></i> Your {duration} day trip from {startLocation} {startLocation != endLocation && "to " + endLocation}
                                 </h2>
 
                                 <p>Estimated cost is only £{price}</p>

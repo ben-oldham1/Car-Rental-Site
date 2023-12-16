@@ -13,7 +13,7 @@ function ReviewCard(props) {
                 <div className='row mb-3'>
                     <div className='col-12'>
                         <p className='card-text'>
-                            <i class="bi bi-quote"></i> {content}
+                            <i className="bi bi-quote"></i> {content}
                         </p>
                     </div>
                 </div>

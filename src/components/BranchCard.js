@@ -12,7 +12,7 @@ function BranchCard(props) {
     return (
         <section className='car-card h-100 card'>
 
-            <img src={"branches/" + imgName} class="card-img-top branch-img" alt={"Image of " + name}></img>
+            <img src={"branches/" + imgName} className="card-img-top branch-img" alt={"Image of " + name}></img>
 
             <div className='card-body'>
 

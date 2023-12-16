@@ -34,17 +34,17 @@ function CarCard(props) {
                 <div className='row'>
                     <div className='col-md-4'>
                         <p>
-                            <i class="bi bi-people"></i> {pplCapacity}
+                            <i className="bi bi-people"></i> {pplCapacity}
                         </p>
                     </div>
                     <div className='col-md-4'>
                         <p>
-                            <i class="bi bi-fuel-pump"></i> {fuel}
+                            <i className="bi bi-fuel-pump"></i> {fuel}
                         </p>
                     </div>
                     <div className='col-md-4'>
                         <p>
-                            {premium && <span class="badge rounded-pill  bg-secondary">Premium</span>}
+                            {premium && <span className="badge rounded-pill  bg-secondary">Premium</span>}
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function CarCard(props) {
 
             </div>
 
-            <div class="card-footer bg-white border-0">
+            <div className="card-footer bg-white border-0">
                 <div className='row pb-2'>
                     <div className='col-12'>
                         <Link
