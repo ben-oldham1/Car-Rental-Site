@@ -119,7 +119,7 @@ export default function QuoteForm() {
                                 <p>Estimated cost is only £{price}</p>
 
                                 <button className="btn btn-primary" onClick={newQuote}>
-                                    Get a new estimate
+                                    Edit estimate
                                 </button>
                             </div>
                         </div>
