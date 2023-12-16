@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import CarCard from '../components/CarCard';
+import CarCard from '../../components/CarCard';
 
-import carData from '../data/CarModels.json';
+import carData from '../../data/CarModels.json';
 
 export default function Page() {
     return (

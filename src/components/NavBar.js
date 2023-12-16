@@ -12,7 +12,7 @@ function Navigation() {
     return (
         <nav className="navbar sticky-top navbar-expand-lg py-1 bg-white">
             <div className="container-fluid">
-                <Link href="/home" className="navbar-brand">
+                <Link href="/" className="navbar-brand">
                     <img src="Logo.png" alt="Logo" height="38" class="d-inline-block align-text-top"></img>
                 </Link>
                 <button
@@ -29,7 +29,7 @@ function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav w-100">
                         <li className="nav-item p-1">
-                            <Link href="/home" className={`nav-link ${pathname === '/home' ? 'active' : ''}`}>
+                            <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>
                                 Instant quote
                             </Link>
                         </li>

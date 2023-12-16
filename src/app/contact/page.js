@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-import branchData from '../data/Branches.json';
-import FaqAccordion from '../components/FaqAccordion';
+import branchData from '../../data/Branches.json';
+import FaqAccordion from '../../components/FaqAccordion';
 
 export default function Page() {
   const [branch, setBranch] = useState("London"); // Default branch is London

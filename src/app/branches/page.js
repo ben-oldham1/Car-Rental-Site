@@ -1,5 +1,5 @@
-import branchData from '../data/Branches.json';
-import BranchCard from '../components/BranchCard';
+import branchData from '../../data/Branches.json';
+import BranchCard from '../../components/BranchCard';
 
 export default function Page() {
     return (

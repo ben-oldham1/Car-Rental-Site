@@ -1,5 +1,5 @@
-import "./styles/scss/custom.scss";
-import "./styles/styles.css";
+import "../styles/scss/custom.scss";
+import "../styles/styles.css";
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 

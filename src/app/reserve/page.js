@@ -1,7 +1,7 @@
 "use client"
 
 import { useSearchParams } from 'next/navigation'
-import ReservationForm from '../components/ReservationForm';
+import ReservationForm from '../../components/ReservationForm';
 import Link from 'next/link';
 
 const Reservations = () => {
