@@ -1,6 +1,6 @@
 import React from 'react';
 
-import QuoteForm from '../components/QuoteForm';
+import QuoteForm from './QuoteForm';
 
 const Hero = () => {
     return (
