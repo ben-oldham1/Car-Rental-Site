@@ -1,5 +1,5 @@
-import Hero from '../../components/Hero';
-import ReviewCard from '../../components/ReviewCard';
+import Hero from '../components/Hero';
+import ReviewCard from '../components/ReviewCard';
 import ReviewData from '../data/ReviewData.json';
 
 export default function Page() {
