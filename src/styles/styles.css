@@ -33,6 +33,12 @@ html {
     object-fit: cover;
 }
 
+.brand-logo-img {
+    width: 70%;
+    filter: grayscale(1);
+    opacity: 0.4;
+}
+
 .car-card:hover .car-img {
     transform: scale(1.05);
 }
