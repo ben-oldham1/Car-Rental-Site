@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
+
 import branchData from '../data/Branches.json';
 
 export default function QuoteForm() {
@@ -118,9 +120,23 @@ export default function QuoteForm() {
 
                                 <p>Estimated cost is only £{price}</p>
 
-                                <button className="btn btn-primary" onClick={newQuote}>
+                                <button className="btn btn-outline-primary me-2" onClick={newQuote}>
                                     Edit estimate
                                 </button>
+
+                                <Link
+                                    href={{
+                                        pathname: '/reserve',
+                                        query: {
+                                            start: startLocation,
+                                            end: endLocation
+                                        },
+                                    }}
+                                >
+                                    <button className="btn btn-primary">
+                                        Begin reservation
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     }
