@@ -4,7 +4,6 @@ import BranchCard from '../../components/BranchCard';
 export default function Page() {
     return (
         <div className='container max-width-container'>
-
             <div className='row text-center mt-4 mb-3'>
                 <div className='col-12'>
                     <h1>Our branches</h1>
@@ -12,13 +11,18 @@ export default function Page() {
             </div>
 
             <div className='row'>
-                {branchData.map((branch) => (
-                    <div className='col-md-6 mb-3' key={branch.key} >
-                        <BranchCard branch={branch} />
+                {branchData ? (
+                    branchData.map((branch) => (
+                        <div className='col-md-6 mb-3' key={branch.key}>
+                            <BranchCard branch={branch} />
+                        </div>
+                    ))
+                ) : (
+                    <div className='col-12'>
+                        No branch data available
                     </div>
-                ))}
+                )}
             </div>
         </div>
-
-    )
+    );
 }
