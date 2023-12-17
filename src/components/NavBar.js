@@ -4,8 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
-//import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 function Navigation() {
     const pathname = usePathname()
 
@@ -13,7 +11,7 @@ function Navigation() {
         <nav className="navbar sticky-top navbar-expand-lg py-1 bg-white">
             <div className="container-fluid">
                 <Link href="/" className="navbar-brand">
-                    <img src="Logo.png" alt="Logo" height="38" className="d-inline-block align-text-top"></img>
+                    <img src="logo.png" alt="Logo" height="38" className="d-inline-block align-text-top"></img>
                 </Link>
                 <button
                     className="navbar-toggler"
