@@ -61,16 +61,7 @@ const Reservations = () => {
 
       <div className='row mb-5 mt-5'>
         <div className='col-12'>
-
-          <section className='card'>
-            <div className='card-body'>
-
-              <h2 className='text-center mb-4'>Reserve online</h2>
-              <ReservationForm initialValues={initialValues} />
-
-            </div>
-          </section>
-
+          <ReservationForm initialValues={initialValues} cardTitle={'Reserve online'} />
         </div>
       </div>
 

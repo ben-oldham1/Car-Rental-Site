@@ -98,19 +98,9 @@ export default function Page() {
 
       <section className='container-fluid max-width-container py-5'>
         <div className='row'>
-          <div className='col-12 text-center'>
-            <h1>Start your reservation now</h1>
-          </div>
-        </div>
-
-        <div className='row'>
           <div className='col-12'>
 
-            <section className='card'>
-              <div className='card-body'>
-                <ReservationForm initialValues={initialValues} />
-              </div>
-            </section>
+            <ReservationForm initialValues={initialValues} cardTitle={'Start your reservation online'} />
 
           </div>
         </div>
