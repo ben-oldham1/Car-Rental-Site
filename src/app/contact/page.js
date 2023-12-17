@@ -67,6 +67,22 @@ export default function Page() {
           <div className='card h-100'>
             <div className='card-body'>
               <h2 className='text-center'>Customer service</h2>
+
+              <p>For any enquiries that can't be dealt with by your local branch, you can contact our customer service team at the following details.</p>
+
+              <div className='mt-3'>
+                <p>
+                  <strong>General enquiries</strong> 123 456789
+                </p>
+                <p>
+                  <strong>Roadside assistance (24hrs)</strong> 123 456789
+                </p>
+              </div>
+
+              <button className='btn btn-outline-primary'>
+                <i class="bi bi-box-arrow-up-right"></i> Chat with us
+              </button>
+
             </div>
           </div>
         </div>
@@ -82,21 +98,6 @@ export default function Page() {
       <div className='row my-3'>
         <div className='col-12'>
           <FaqAccordion />
-        </div>
-      </div>
-
-      <div className='row my-3'>
-        <div className='col-12'>
-          <h2 className='text-center'>Leave us a review</h2>
-        </div>
-      </div>
-
-      <div className='row my-3'>
-        <div className='col-md-4'>
-          <p>TrustPilot</p>
-        </div>
-        <div className='col-md-4'>
-          <p>Trustpilot</p>
         </div>
       </div>
 
