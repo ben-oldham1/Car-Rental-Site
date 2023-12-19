@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import CopyrightLabel from './CopyrightLabel';
+
 const Footer = () => {
     return (
         <div className='container-fluid bg-white py-5'>
@@ -66,10 +68,12 @@ const Footer = () => {
                     <h5>Carmony</h5>
                     <p>
                         123 Made Up Street <br />
-                        Imaginary Lane <br />
                         London <br />
                         AB1 CD12
                     </p>
+
+                    <CopyrightLabel />
+
                     <p>
                         <Link href="tel:123456789" className="link">
                             <i className="bi bi-telephone"></i> 123 456789
