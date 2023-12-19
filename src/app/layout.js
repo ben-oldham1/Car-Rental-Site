@@ -7,6 +7,8 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ImportBsJs from "../components/ImportBsJs";
 
+import Script from "next/script";
+
 
 export const metadata = {
   title: 'Carmony | Ben Oldham Portfolio',
@@ -19,13 +21,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2CBNQX9T3B"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2CBNQX9T3B');
+        `}
+        </Script>
+
       </head>
       <body>
-        <ImportBsJs />
-
         <NavBar />
         {children}
         <Footer />
+
+        <ImportBsJs />
       </body>
     </html>
   )
