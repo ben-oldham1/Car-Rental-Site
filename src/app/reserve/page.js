@@ -26,7 +26,7 @@ const Reservations = () => {
 
       <div className='row mt-4'>
         <div className='col-12'>
-          <h1 className='text-center'>Make a reservation</h1>
+          <h1 className='text-center'>Our process</h1>
         </div>
       </div>
 

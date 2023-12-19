@@ -23,23 +23,23 @@ export default function Page() {
       <Hero />
 
       <section className='container-fluid d-none d-lg-block py-5'>
-        <div class="row justify-content-between text-center">
-          <div class="col-3 align-self-center">
+        <div className="row justify-content-between text-center">
+          <div className="col-3 align-self-center">
             <img src="/brand-logos/mercedes.png" className='img-fluid brand-logo-img' alt="Mercedes logo" />
           </div>
-          <div class="col-2 align-self-center">
+          <div className="col-2 align-self-center">
             <img src="/brand-logos/ford.png" className='img-fluid brand-logo-img' alt="Ford logo" />
           </div>
-          <div class="col-2 align-self-center">
+          <div className="col-2 align-self-center">
             <img src="/brand-logos/toyota.png" className='img-fluid brand-logo-img' alt="Toyota logo" />
           </div>
-          <div class="col-1 align-self-center">
+          <div className="col-1 align-self-center">
             <img src="/brand-logos/bmw.png" className='img-fluid brand-logo-img' alt="BMW logo" />
           </div>
-          <div class="col-2 align-self-center">
+          <div className="col-2 align-self-center">
             <img src="/brand-logos/hyundai.png" className='img-fluid brand-logo-img' alt="Hyundai logo" />
           </div>
-          <div class="col-2 align-self-center">
+          <div className="col-2 align-self-center">
             <img src="/brand-logos/skoda.png" className='img-fluid brand-logo-img' alt="Skoda logo" />
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Page() {
             <div className='row mb-3'>
               <div className='col-12'>
                 {/* <img src="/icons/locations.png" className='img-fluid w-25 my-4' /> */}
-                <h3><i class="bi bi-check-circle-fill text-success"></i> Locations all over the UK</h3>
+                <h3><i className="bi bi-check-circle-fill text-success"></i> Locations all over the UK</h3>
                 <p>With <Link href={'/branches'} className='link'>branches</Link> in most major cities, we'll never be too far away.</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Page() {
             <div className='row mb-3'>
               <div className='col-12'>
                 {/* <img src="/icons/car.png" className='img-fluid w-25 my-4' /> */}
-                <h3><i class="bi bi-check-circle-fill text-success"></i> Vehicles for everyone</h3>
+                <h3><i className="bi bi-check-circle-fill text-success"></i> Vehicles for everyone</h3>
                 <p>Our selection of cars offer something for every need and budget. Explore our <Link href={'/fleet'} className='link'>full fleet</Link>.</p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Page() {
             <div className='row mb-3'>
               <div className='col-12'>
                 {/* <img src="/icons/cust-service.png" className='img-fluid w-25 my-4' /> */}
-                <h3><i class="bi bi-check-circle-fill text-success"></i> Customer service</h3>
+                <h3><i className="bi bi-check-circle-fill text-success"></i> Customer service</h3>
                 <p>We strive to make sure every customer receieves excellent service.</p>
               </div>
             </div>

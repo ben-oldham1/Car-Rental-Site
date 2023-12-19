@@ -31,7 +31,7 @@ export default function QuoteForm() {
                         <div>
                             <div className="row">
                                 <div className="col-12 text-center mb-3">
-                                    <h2>Find your next rental</h2>
+                                    <h1>Find your next rental</h1>
                                 </div>
                             </div>
 

@@ -32,7 +32,6 @@ export default function Page() {
                 name="start-loc"
                 id="start-loc"
                 className="form-select"
-                value={branch}
                 onChange={(e) => setBranch(e.target.value)}
               >
                 {branchData.map((branch) => (
@@ -80,7 +79,7 @@ export default function Page() {
               </div>
 
               <button className='btn btn-outline-primary'>
-                <i class="bi bi-box-arrow-up-right"></i> Chat with us
+                <i className="bi bi-box-arrow-up-right"></i> Chat with us
               </button>
 
             </div>
@@ -89,17 +88,19 @@ export default function Page() {
 
       </div>
 
-      <div className='row my-3'>
-        <div className='col-12'>
-          <h2 className='text-center'>Frequently Asked Questions (FAQ)</h2>
+      <section className='py-5'>
+        <div className='row my-3 '>
+          <div className='col-12'>
+            <h2 className='text-center'>Frequently Asked Questions (FAQ)</h2>
+          </div>
         </div>
-      </div>
 
-      <div className='row my-3'>
-        <div className='col-12'>
-          <FaqAccordion />
+        <div className='row my-3'>
+          <div className='col-12'>
+            <FaqAccordion />
+          </div>
         </div>
-      </div>
+      </section>
 
     </div>
   );

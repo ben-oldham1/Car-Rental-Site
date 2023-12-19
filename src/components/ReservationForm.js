@@ -22,12 +22,12 @@ const ReservationForm = ({ initialValues, cardTitle }) => {
     }
 
     return (
-        <section className='card py-3'>
+        <section className='card py-2'>
             <div className='card-body'>
                 {reservation == null ?
                     <form onSubmit={handleSubmit}>
                         <div className='row'>
-                            <h2 className='text-center mb-4'>{cardTitle}</h2>
+                            <h1 className='text-center mb-4'>{cardTitle}</h1>
                         </div>
 
                         <div className='row'>
