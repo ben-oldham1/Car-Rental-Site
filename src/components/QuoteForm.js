@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 import branchData from '../data/Branches.json';
 
+import { sendGAEvent } from '@next/third-parties/google'
+
 export default function QuoteForm() {
     const [startLocation, setStartLocation] = useState('London');
     const [duration, setDuration] = useState(1);
@@ -13,6 +15,7 @@ export default function QuoteForm() {
     const [price, setPrice] = useState(null);
 
     const calculatePrice = () => {
+        sendGAEvent({ event: 'buttonClicked', value: 'Quote Form' });
         const calculatedPrice = (100 + duration * 50) * carType;
 
         setPrice(calculatedPrice);
@@ -111,7 +114,9 @@ export default function QuoteForm() {
                                 </div>
                             </div>
                         </div>
+
                         :
+
                         <div className="row text-center">
                             <div className="col-12">
                                 <h2>

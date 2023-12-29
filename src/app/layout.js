@@ -7,7 +7,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ImportBsJs from "../components/ImportBsJs";
 
-import AnalyticsTag from "../components/AnalyticsTag";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export const metadata = {
@@ -20,9 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <AnalyticsTag />
-      </head>
       <body>
         <NavBar />
         {children}
@@ -30,6 +27,9 @@ export default function RootLayout({
 
         <ImportBsJs />
       </body>
+
+      <GoogleAnalytics gaId="G-2CBNQX9T3B" />
+
     </html>
   )
 }
