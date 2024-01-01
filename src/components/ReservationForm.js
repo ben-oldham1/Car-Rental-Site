@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import branchData from '../data/Branches.json';
+import carData from '../data/CarModels.json';
 
 const ReservationForm = ({ initialValues, cardTitle }) => {
     const [formData, setFormData] = useState(initialValues || {});
@@ -100,17 +101,27 @@ const ReservationForm = ({ initialValues, cardTitle }) => {
                                     required={true}
                                 />
                             </div>
+
                             <div className="col-md-4 mb-3">
-                                <label htmlFor="car" className="form-label">Car ID</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
+                                <label htmlFor="car" className="form-label">Car</label>
+                                <select
+                                    className="form-select"
                                     id="car"
                                     name="car"
                                     value={formData.car}
                                     onChange={handleChange}
                                     required={false}
-                                />
+                                >
+                                    <option value=''>
+                                        Choose car (optional)
+                                    </option>
+
+                                    {carData.map((car) => (
+                                        <option key={car.key} value={car.key} selected={car.key == formData.car ? true : false}>
+                                            {car.make} {car.model}
+                                        </option>
+                                    ))}
+                                </select>
                             </div>
                         </div>
 
