@@ -31,4 +31,4 @@ One of the key features is the ability to get a price quote and begin a car rese
 
 This project is open-source licensed and you are welcome to clone the repo for your own use. 
 
-I would appreciate if you would give credit, by including a link to my portfolio:
+I would appreciate if you would give credit, by including a link to [my portfolio](www.benoldham.dev)
