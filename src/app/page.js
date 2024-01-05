@@ -96,7 +96,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className='container-fluid max-width-container py-5'>
+      <section className='container-fluid max-width-container pt-5 mb-5'>
         <div className='row'>
           <div className='col-12'>
 

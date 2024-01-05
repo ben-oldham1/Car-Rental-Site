@@ -3,7 +3,7 @@ import BranchCard from '../../components/BranchCard';
 
 export default function Page() {
     return (
-        <div className='container max-width-container'>
+        <div className='container max-width-container mb-5'>
             <div className='row text-center mt-4 mb-3'>
                 <div className='col-12'>
                     <h1>Our branches</h1>
