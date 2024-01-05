@@ -12,7 +12,7 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
 
 export const metadata = {
   title: 'Carmony | Ben Oldham Portfolio',
-  description: 'Portfolio project for a fictional car rental company. Built using Next JS and styled with customised bootstrap.',
+  description: 'Portfolio project for a fictional car rental company. Built using Next.js and styled with customised bootstrap.',
 }
 
 export default function RootLayout({
