@@ -71,10 +71,10 @@ export default function Page() {
 
               <div className='mt-3'>
                 <p>
-                  <strong>General enquiries</strong> 123 456789
+                  <strong>General enquiries:</strong> <Link href='tel:123456789' className='link'>123 456789</Link>
                 </p>
                 <p>
-                  <strong>Roadside assistance (24hrs)</strong> 123 456789
+                  <strong>Roadside assistance (24hrs):</strong> <Link href='tel:123456789' className='link'>123 456789</Link>
                 </p>
               </div>
 
